@@ -1,7 +1,8 @@
-@import url(css/header.css);
+@import url("css/header.css");
 
-:root{
-    --branco: #FFFFFF;
+:root {
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --branco: #fff;
     --cor-de-fundo: #EBECEE;
 }
 
