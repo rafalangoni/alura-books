@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,6 +41,44 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" placeholder="Qual será sua próxima leitura?" class="banner__pesquisa">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Últimos lançamentos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/ApacheKafka.png" alt="livro sobre apache kafka"></div>
+      <div class="swiper-slide"><img src="./img/Liderança.png" alt="livro sobre liderança"></div>
+      <div class="swiper-slide"><img src="./img/Guia Front-end.png" alt="livro sobre Front-end"></div>
+      <div class="swiper-slide"><img src="./img/Javascript.png" alt="livro sobre javascript"></div>
+      <div class="swiper-slide"><img src="./img/Portugol.png" alt="livro sobre apache kafka"></div>
+    </div>
+    <!-- If we need pagination -->
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+    </section>
     
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+         spaceBetween: 10,
+         slidesPerView: 3,
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        }
+});
+    </script>
 </body>
 </html>
