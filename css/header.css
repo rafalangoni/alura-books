@@ -38,14 +38,15 @@
 }
 
 .lista__menu-link{
-    color: black;
+    background-clip: text;
+    color: var(--azul-degrade);
     text-decoration: none;
     text-transform: uppercase;
-    background-clip: text;
 }
 
 .lista__menu-titulo{
-    color: orange;
+    color: var(--laranja);
+    font-weight: 700;
 }
 
 /*Espécie de condicional com CSS
@@ -54,4 +55,8 @@ um elemento subsequente, ou seja, a classe .lista-menu e
 colocar as propriedades dentro dela*/
 .container__botao:checked~.lista-menu{
     display: block;
+}
+
+.container__botao{
+    display: none;
 }
