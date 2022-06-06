@@ -34,3 +34,29 @@ hr{
     font-family: var(--fonte-principal);
     padding-left: 2rem;
 }
+
+@media screen and (min-width: 1024px){
+    .contato{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato__email{
+        width: 30%;
+    }
+
+    .contato__texto{
+        margin-right: 1rem;
+    }
+
+    .contato__titulo{
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 70%;
+    }
+
+    .contato__texto{
+        font-size: 1rem;
+    }
+}

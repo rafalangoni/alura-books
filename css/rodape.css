@@ -6,3 +6,39 @@
 .rodape__titulo{
     font-weight: 400;
 }
+
+.rodape__lista{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        background-color: var(--cinza-claro);
+        display: flex;  
+        justify-content: space-around;
+    }
+
+    .rodape__item{
+        align-items: center;
+        display: flex;
+        margin: 1rem 0;
+    }
+
+    .rodape__item-link{
+        margin-left: 0.5rem;
+    }
+
+    .rodape__lista{
+        display: block;
+    }
+
+    .rodape__item-titulo,
+    .rodape__item-link{
+        color: var(--cinza);
+        font-size: 0.875rem;
+    }
+
+    .rodape__titulo{
+        font-size: 1.5rem;
+    }
+}

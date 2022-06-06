@@ -20,3 +20,23 @@
 .swiper-button-next{
     display: none;
 }
+
+@media screen and (min-width: 1024px){
+    .carrossel__titulo{
+        font-size: 1.625rem;
+        padding: 2rem 0;
+    }
+
+    .swiper-pagination{
+        margin: 2rem 0;
+    }
+
+    .swiper-button-prev, 
+    .swiper-button-next{
+       display: block;
+    }
+
+    .swiper-slide img{
+        width: 80%;
+    }
+}
