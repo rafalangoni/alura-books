@@ -40,3 +40,15 @@
         width: 80%;
     }
 }
+
+@media screen and (min-width: 1728px){
+    .carrossel__container{
+        display: flex;
+        margin: 2rem 20vw 2rem 20vw;
+    }
+
+    .carrossel__imagem{
+        height: auto;
+        width: 100%;
+    }
+}

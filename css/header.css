@@ -69,6 +69,10 @@ colocar as propriedades dentro dela*/
     display: none;
 }
 
+.container__texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px){
     .container__titulo,
     .container__titulo-negrito{
@@ -114,5 +118,26 @@ colocar as propriedades dentro dela*/
 
     .opcoes__botao{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .container__link{
+        align-items: center;
+        color: var(--preto);
+        display: flex;
+        text-decoration: none;
+    }
+
+    .cabecalho{
+        padding: 0 2.5rem;
+    }
+
+    .container__texto{
+        display: block;
+    }
+
+    .lista__container{
+        margin-right: auto;
     }
 }
